@@ -1,16 +1,24 @@
-// import { useState } from 'react'
+import { useState } from "react";
+import style from "./App.module.css";
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import "./App.css";
 
-function App() {
-  const handleClick = (event) => {
-    console.log("Hello World!");
-    console.log(event);
+function App(props) {
+  const [hide, setHide] = useState(false);
+  const isHidden = (event) => {
+    console.info(event, !hide);
+    setHide(!hide);
   };
-  return <button onClick={handleClick}>Click me</button>;
-}
 
+  return (
+    <div>
+      <p className={style.Mediumvioletred}>
+        When you go to work, bring your umbrella with you!
+      </p>
+    </div>
+  );
+}
 //   return (
 //     <>
 //       <div>

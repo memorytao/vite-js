@@ -6,7 +6,7 @@ import ParentComponent from "./ParentComponent.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App user="tao"/>
+    <App users="tao"/>
     {/* <ParentComponent /> */}
   </React.StrictMode>
 );
