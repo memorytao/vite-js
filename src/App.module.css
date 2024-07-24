@@ -1,13 +1,13 @@
+.Inlineblock {
+  display: block;
+}
+
 .Burlywood {
-  color: burlywood;
+  color: seagreen;
   text-align: left;
 }
 
 .Mediumvioletred {
   color: mediumvioletred;
-  text-align: right;
-}
-
-.Inlineblock{
-  display: block;
+  text-align: left;
 }

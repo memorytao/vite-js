@@ -1,48 +1,29 @@
-import { useState } from "react";
-import style from "./App.module.css";
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import "./App.css";
+import Card from "./components/Card/Card";
 
-function App(props) {
-  const [hide, setHide] = useState(false);
-  const isHidden = (event) => {
-    console.info(event, !hide);
-    setHide(!hide);
-  };
+import harbor from "./assets/cards/StockCake-Sunset Harbor View_1721837549.jpg";
+import seaSunset from "./assets/cards/StockCake-Tranquil Sea Sunset_1721837523.jpg";
+import sunriceSerenity from "./assets/cards/StockCake-Winter Sunrise Serenity_1721837561.jpg";
 
+const App = () => {
   return (
-    <div>
-      <p className={style.Mediumvioletred}>
-        When you go to work, bring your umbrella with you!
-      </p>
+    <div className="flex flex-wrap justify-center">
+      <Card
+        image={harbor}
+        title="Card Title here"
+        description="Lorem ipsum dolor sit amet, vehiculaum ero felis loreum fitiona fringilla goes scelerisque Interdum et."
+      />
+      <Card
+        image={seaSunset}
+        title="Card Title here"
+        description="Lorem ipsum dolor sit amet, vehiculaum ero felis loreum fitiona fringilla goes scelerisque Interdum et."
+      />
+      <Card
+        image={sunriceSerenity}
+        title="Card Title here"
+        description="Lorem ipsum dolor sit amet, vehiculaum ero felis loreum fitiona fringilla goes scelerisque Interdum et."
+      />
     </div>
   );
-}
-//   return (
-//     <>
-//       <div>
-//         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-//           <img src={viteLogo} className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://react.dev" target="_blank" rel="noreferrer">
-//           <img src={reactLogo} className="logo react" alt="React logo" />
-//         </a>
-//       </div>
-//       <h1>Vite + React</h1>
-//       <div className="card">
-//         <button onClick={() => setCount((count) => count + 1)}>
-//           count is {count}
-//         </button>
-//         <p>
-//           Edit <code>src/App.jsx</code> and save to test HMR
-//         </p>
-//       </div>
-//       <p className="read-the-docs">
-//         Click on the Vite and React logos to learn more
-//       </p>
-//     </>
-//   )
-// }
+};
 
 export default App;
