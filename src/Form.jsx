@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Form() {
+const Form = () => {
   const [username, setUsername] = useState();
   const [usernameError, setUsernameError] = useState();
 
@@ -33,6 +33,6 @@ function Form() {
       <button>Submit</button>
     </form>
   );
-}
+};
 
 export default Form;
