@@ -3,13 +3,14 @@ import { useState } from "react";
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  // const [rememberMe, setRememberMe] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission
     console.log("Form submitted", { username, password });
     sessionStorage.setItem("user", username);
+
+    // return <Test show={loading} />;
   };
 
   return (

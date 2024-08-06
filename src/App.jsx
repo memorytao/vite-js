@@ -1,12 +1,15 @@
-import Menu from "./pages/Menu/Menu";
+import MyForm from "./pages/Example/LoadingModal";
 import Login from "./pages/Login/Login";
-import Test from "./pages/Example/Test";
+import Menu from "./pages/Menu/Menu";
+
+
+const MainPage = () => {
+  const user = sessionStorage.getItem("user");
+  return user ? <Menu /> : <Login />;
+};
 
 const App = () => {
-  const user = sessionStorage.getItem("user");
-
-  // return <>{user ? <Menu /> : <Login />}</>;
-  return <Test />;
+  return <MyForm />;
 };
 
 export default App;
