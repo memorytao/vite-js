@@ -2,12 +2,6 @@ import { Link } from "react-router-dom";
 
 const PageNav = () => {
   return (
-    // <>
-    //   <Link to="/"> Home </Link>
-    //   <Link to="pricing"> Pricing </Link>
-    //   <Link to="categories"> Cagegories </Link>
-    // </>
-
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white font-bold text-xl">Your Logo</div>
