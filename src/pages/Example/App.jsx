@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <PageNav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/vite-js" element={<Home />} />
         <Route path="pricing" element={<Pricing />} />
         <Route path="categories" element={<Categories />}>
           <Route path="male" element={<Men />} />

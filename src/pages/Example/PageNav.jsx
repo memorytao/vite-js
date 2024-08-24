@@ -7,7 +7,7 @@ const PageNav = () => {
         <div className="text-white font-bold text-xl">Your Logo</div>
         <ul className="flex space-x-4">
           <li>
-            <Link to="/" className="text-white hover:text-gray-300">
+            <Link to="/vite-js" className="text-white hover:text-gray-300">
               Home
             </Link>
           </li>
