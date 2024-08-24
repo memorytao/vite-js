@@ -9,7 +9,7 @@ const MainPage = () => {
 };
 
 const App = () => {
-  return <MyForm />;
+  return <MainPage />;
 };
 
 export default App;

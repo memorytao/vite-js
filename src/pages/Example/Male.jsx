@@ -1,5 +1,5 @@
-const Male = () => {
-  return <p> Male </p>;
+const Men = () => {
+  return <p> This is for men </p>;
 };
 
-export default Male;
+export default Men;
